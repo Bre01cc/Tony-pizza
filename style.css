@@ -15,6 +15,7 @@ li {
   list-style: none;
   /* todas linhas acima são resets */
 }
+
 /* criação de variaveis globais */
 :root {
   --primary-color: #f07807;
@@ -50,9 +51,9 @@ header menu {
   align-items: center;
   /* centralizar  itens do menu */
   gap: 48px;
-   /* Distancia entre os conteudos do menu */
+  /* Distancia entre os conteudos do menu */
   font-size: 16px;
- 
+
 }
 
 header li {
@@ -152,20 +153,23 @@ section {
   /* transparencia do item */
   transition: 0.5s;
 }
+
 .pizza:hover .add-produto {
-    /* hover é uma funcionalidade que é ativada  quando passa o curso do mouse*/
+  /* hover é uma funcionalidade que é ativada  quando passa o curso do mouse*/
   opacity: 1;
   /* Torna o objeto aparente */
 }
+
 .animacao {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    border-radius: 0 0 12px 12px;
-  }
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 0 0 12px 12px;
+}
+
 .container-info {
   display: flex;
   justify-content: space-between;
@@ -180,16 +184,19 @@ section {
   border-radius: 0 0 12px 12px;
   bottom: -36px;
 }
+
 .pizza:hover .container-info {
-    /* hover é uma funcionalidade */
-    bottom: 0;
-    transition: 0.5s;
-  }
+  /* hover é uma funcionalidade */
+  bottom: 0;
+  transition: 0.5s;
+}
+
 .container-info p {
   width: 120px;
   font-size: 12px;
   color: #fff;
 }
+
 .container-info span {
   font-size: 12px;
   display: grid;
@@ -204,22 +211,26 @@ section {
 
 .cardapio {
   background-color: #fff;
-  flex-direction: column ;
+  flex-direction: column;
   display: flex;
+  height: 1000px;
 }
-.titulo-secao{
+
+.titulo-secao {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.titulo-secao h3{
+
+.titulo-secao h3 {
   font-size: 40px;
   color: #f07807;
   text-transform: uppercase;
   /* deixa o texto em maiusculo */
   font-weight: 600;
 }
-.opcoes-cardapio{
+
+.opcoes-cardapio {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -229,19 +240,22 @@ section {
   /* padding-bottom: 30px; */
 }
 
-.titulo-opcoes{
+.titulo-opcoes {
   display: flex;
   justify-content: space-between;
   color: #f07807;
 }
-.titulo-opcoes h4{
+
+.titulo-opcoes h4 {
   font-size: 1.5rem;
 }
-.titulo-opcao a{
+
+.titulo-opcao a {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.pizza.bebida{
+
+.pizza.bebida {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,29 +266,34 @@ section {
   /* tempo de transição */
 }
 
-.pizza.bebida:hover{
+.pizza.bebida:hover {
   box-shadow: 2px 2px 8px #CCC;
 }
 
-.pizza.bebida .valor{
+.pizza.bebida .valor {
   color: #f07807;
   width: 100%;
 }
-.pizza.bebida .descricao{
+
+.pizza.bebida .descricao {
   font-size: 8px;
 }
+
 .servicos {
- display: flex;
- flex-direction: column;
- gap: 32PX;
- padding-top:32px ;
- padding-bottom:32PX ;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32PX;
+  padding-top: 32px;
+  padding-bottom: 32PX;
 }
-.opecoes-servico{
+
+.opecoes-servico {
   display: flex;
   justify-content: space-between;
 }
-.servico-card{
+
+.servico-card {
   width: 400px;
   height: 500px;
   border: 4px solid var(--primary-color);
@@ -285,11 +304,13 @@ section {
   align-items: center;
   padding: 40px;
 }
-.servico-card img{
+
+.servico-card img {
   /* sombra na imagem */
   filter: drop-shadow(2px 2px 4px #667);
 }
-.servico-card h4{
+
+.servico-card h4 {
   /* tamanho da fonte */
   font-size: 2.5rem;
   color: #f07807;
@@ -298,11 +319,77 @@ section {
   /* Sombra do texto */
   text-shadow: 2px 2px 2px #667;
 }
-.servico-card p{
+
+.servico-card p {
   text-align: center;
   font-size: 1.2rem;
 }
+
 footer {
+  background-color: var(--primary-color);
   height: 526px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.contatos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 32px;
+  width: 70%;
+
+}
+
+.contatos-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 120px;
+}
+.contatos-item.logo{
+  justify-content: center;
+  padding: 0;
+}
+.contatos-item menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  font-weight: 400;
+}
+.contatos-item h4{
+  font-size: 1.5rem;
+}
+.contatos-item li{
+  display: flex;
+  gap: 16px;
+}
+.social a{
+width: 50px;
+height: 50px;
+display: grid;
+place-content: center;
+border: 2px solid white;
+border-radius: 50%;
+font-size: 1.5rem;
+transition: 0.5s;
+}
+.social a:hover{
   background-color: var(--secundary-color);
+  color: var(--primary-color);
+}
+.creditos {
+  display: grid;
+  place-content: center;
+  height: 72px;
+  border-top: 1px solid var(--secundary-color);
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 300;
+  font-style: italic;
 }
