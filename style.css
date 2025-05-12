@@ -18,7 +18,7 @@ li {
 /* criação de variaveis globais */
 :root {
   --primary-color: #f07807;
-  --secundary-color: #fbddc1;
+  --secundary-color: #fef2e7;
   --default-shadow: 0 4px 4px #0004;
   --defaul-padding: 0px 80px;
 }
@@ -249,6 +249,7 @@ section {
   border-radius: 4px;
   padding: 16px;
   transition: 5s;
+  /* tempo de transição */
 }
 
 .pizza.bebida:hover{
@@ -263,10 +264,45 @@ section {
   font-size: 8px;
 }
 .servicos {
-  background-color: aquamarine;
+ display: flex;
+ flex-direction: column;
+ gap: 32PX;
+ padding-top:32px ;
+ padding-bottom:32PX ;
 }
-
+.opecoes-servico{
+  display: flex;
+  justify-content: space-between;
+}
+.servico-card{
+  width: 400px;
+  height: 500px;
+  border: 4px solid var(--primary-color);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+}
+.servico-card img{
+  /* sombra na imagem */
+  filter: drop-shadow(2px 2px 4px #667);
+}
+.servico-card h4{
+  /* tamanho da fonte */
+  font-size: 2.5rem;
+  color: #f07807;
+  /* Grossura da linha */
+  font-weight: 500;
+  /* Sombra do texto */
+  text-shadow: 2px 2px 2px #667;
+}
+.servico-card p{
+  text-align: center;
+  font-size: 1.2rem;
+}
 footer {
   height: 526px;
-  background-color: rgba(210, 105, 30, 0.734);
+  background-color: var(--secundary-color);
 }
