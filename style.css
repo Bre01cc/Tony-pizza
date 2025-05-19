@@ -122,9 +122,9 @@ section {
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 64px;
-  /* Aumentar a distancia entre o slogan e as opções de pizza */
+ 
 }
-
+ /* Aumentar a distancia entre o slogan e as opções de pizza */
 .hero span {
   color: var(--primary-color);
 }
@@ -513,8 +513,9 @@ footer {
     height: 100%;
     background-size:cover;
   }
-  .hero{
-    
+  .hero h2{
+    height: ;
+   width: 287px;
   }
     /* /* background-position: center;
   }  */
