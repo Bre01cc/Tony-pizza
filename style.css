@@ -23,6 +23,9 @@ li {
   --default-shadow: 0 4px 4px #0004;
   --defaul-padding: 0px 80px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -42,6 +45,7 @@ header {
   align-items: center;
   /* Centraliza o botão de login */
   padding: var(--defaul-padding);
+ background-color: #fff1;
   z-index: 999;
 }
 
