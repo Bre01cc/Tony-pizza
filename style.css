@@ -58,7 +58,6 @@ header menu {
   gap: 48px;
   /* Distancia entre os conteudos do menu */
   font-size: 16px;
-
 }
 
 header li {
@@ -107,7 +106,6 @@ section {
   /* Aumenta proporcionalmente altura e largura da imagem até a borda do container */
   display: grid;
   grid-template-rows: 70% 30%;
-
 }
 
 .hero {
@@ -122,9 +120,8 @@ section {
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 64px;
- 
 }
- /* Aumentar a distancia entre o slogan e as opções de pizza */
+/* Aumentar a distancia entre o slogan e as opções de pizza */
 .hero span {
   color: var(--primary-color);
 }
@@ -213,7 +210,6 @@ section {
   border-radius: 6px;
 }
 
-
 .cardapio {
   background-color: #fff;
   flex-direction: column;
@@ -272,7 +268,7 @@ section {
 }
 
 .pizza.bebida:hover {
-  box-shadow: 2px 2px 8px #CCC;
+  box-shadow: 2px 2px 8px #ccc;
 }
 
 .pizza.bebida .valor {
@@ -288,9 +284,9 @@ section {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 32PX;
+  gap: 32px;
   padding-top: 32px;
-  padding-bottom: 32PX;
+  padding-bottom: 32px;
 }
 
 .opecoes-servico {
@@ -338,7 +334,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   color: white;
-
 }
 
 .contatos-container {
@@ -347,7 +342,6 @@ footer {
   flex-grow: 1;
   gap: 32px;
   width: 70%;
-
 }
 
 .contatos-item {
@@ -406,7 +400,7 @@ footer {
   font-style: italic;
 }
 /* TABLET */
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
   header {
     position: absolute;
     top: 48px;
@@ -426,7 +420,6 @@ footer {
     z-index: 999;
     /* pointer-events: none; */
     /* eventos do ponteiro */
-
   }
 
   header li:hover {
@@ -467,79 +460,93 @@ footer {
     justify-content: center;
     gap: 10px;
   }
-  .opcoes-cardapio{
+  .opcoes-cardapio {
     height: auto;
   }
-  .pizza.bebida:nth-last-child(1){
-   display: none;
+  .pizza.bebida:nth-last-child(1) {
+    display: none;
   }
-  .opecoes-servico{
+  .opecoes-servico {
     flex-direction: column;
   }
-.servico-card{
-  width: 100%;
-  flex-wrap: wrap;
-
-}
-.servico-card p{
-  width: 60%;
-}
-.contatos-container{
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 400px;
-  justify-content: center;
-}
-.contatos-item:nth-last-of-type(2){
-  display: none;
-}
-.contatos-item{
-  padding: 0;
-}
-.contatos-item.social{
-  align-items: end;
-}
-.creditos{
-  margin-bottom: 96px;
-}
+  .servico-card {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .servico-card p {
+    width: 60%;
+  }
+  .contatos-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+  }
+  .contatos-item:nth-last-of-type(2) {
+    display: none;
+  }
+  .contatos-item {
+    padding: 0;
+  }
+  .contatos-item.social {
+    align-items: end;
+  }
+  .creditos {
+    margin-bottom: 96px;
+  }
 }
 /* MOBILE */
-@media(max-width:768px){
-  .home{
+@media (max-width: 768px) {
+  .home {
     background-color: #f07807;
     background-image: url(./img/background-mobile.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
-    background-size:cover;
+    padding:0 ;
+    background-size: cover;
   }
-  .hero h2{
-    height: ;
-   width: 287px;
+
+  .hero {
+    /* justify-content: end;
+    padding: 0;
+    align-self: end; */
+    /* height: auto; */
+    width: 100%;
+    background-color: #667;
+    /* padding-right: 100px; */
   }
-    /* /* background-position: center;
-  }  */
-  .hero img{
+  .hero h2 {
+    background-color: aqua;
+    color: var(--secundary-color);
+    font-weight: 500;
+    height: 192px;
+    width: 287px;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  
+  }
+
+  .hero img {
     display: none;
   }
-.pizza:nth-last-child(1){
-  display: none;
- }
-.pizza.bebida:nth-last-child(5),
-.pizza.bebida:nth-last-child(6){
-  display: none;
-}
-.container-produtos{
-  justify-content: center;
-}
-.opecoes-servico{
- gap: 30px;
-}
-.servico-card{
-  height: auto;
-}
-.servico-card p{
-  display: none;
-}
-
+  .pizza:nth-last-child(1) {
+    display: none;
+  }
+  .pizza.bebida:nth-last-child(5),
+  .pizza.bebida:nth-last-child(6) {
+    display: none;
+  }
+  .container-produtos {
+    justify-content: center;
+  }
+  .opecoes-servico {
+    gap: 30px;
+  }
+  .servico-card {
+    height: auto;
+  }
+  .servico-card p {
+    display: none;
+  }
+  
 }
