@@ -121,6 +121,7 @@ section {
   font-weight: 400;
   margin-bottom: 64px;
 }
+
 /* Aumentar a distancia entre o slogan e as opções de pizza */
 .hero span {
   color: var(--primary-color);
@@ -399,6 +400,7 @@ footer {
   font-weight: 300;
   font-style: italic;
 }
+
 /* TABLET */
 @media (max-width: 1024px) {
   header {
@@ -447,6 +449,7 @@ footer {
   .container-produtos {
     gap: 32px;
   }
+
   .container-produtos .pizza:nth-last-child(4),
   .container-produtos .pizza:nth-last-child(3) {
     display: none;
@@ -460,93 +463,145 @@ footer {
     justify-content: center;
     gap: 10px;
   }
+
   .opcoes-cardapio {
     height: auto;
   }
+
   .pizza.bebida:nth-last-child(1) {
     display: none;
   }
+
   .opecoes-servico {
     flex-direction: column;
   }
+
   .servico-card {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .servico-card p {
     width: 60%;
   }
+
   .contatos-container {
     flex-direction: column;
     flex-wrap: wrap;
     height: 400px;
     justify-content: center;
   }
-  .contatos-item:nth-last-of-type(2) {
+
+  .contatos-item:nth-last-of-type(3) {
     display: none;
   }
+
   .contatos-item {
     padding: 0;
   }
+
   .contatos-item.social {
     align-items: end;
   }
+
   .creditos {
     margin-bottom: 96px;
   }
 }
+
 /* MOBILE */
 @media (max-width: 768px) {
+  header menu{
+    gap: 0.8rem;
+  }
+  header img {
+    filter: brightness(0) invert(1); /* Transforma a imagem (SVG) em branco */
+}
   .home {
     background-color: #f07807;
     background-image: url(./img/background-mobile.png);
     background-repeat: no-repeat;
     width: 100%;
-    padding:0 ;
+    padding: 0;
     background-size: cover;
   }
 
-  .hero {
-    /* justify-content: end;
-    padding: 0;
-    align-self: end; */
-    /* height: auto; */
-    width: 100%;
-    background-color: #667;
-    /* padding-right: 100px; */
-  }
   .hero h2 {
-    background-color: aqua;
+    font-size: 3rem;
+    margin-left:  0.7rem; 
     color: var(--secundary-color);
-    font-weight: 500;
-    height: 192px;
-    width: 287px;
-    font-size: 2.5rem;
-    margin-bottom: 0;
-  
+    /* text-align: center; */
+    width: 50vw;
+
+  }
+  .cardapio{
+    justify-content: center;
+    height: auto;
+  }
+  .container-produtos .pizza{
+    width: 100vw;
+  }
+  .container-produtos .pizza img{
+    width: 100%;
+    height: auto;
+  }
+  .container-produtos .bebida img{
+    width: 50%;
+    height: auto;
+  }
+  .hero span{
+    
+    background-color: var(--secundary-color);
+  }
+  .hero{
+    align-items: start;
   }
 
   .hero img {
     display: none;
   }
+
   .pizza:nth-last-child(1) {
     display: none;
   }
+
   .pizza.bebida:nth-last-child(5),
   .pizza.bebida:nth-last-child(6) {
     display: none;
   }
+
+  .titulo-opcoes a {
+    display: none;
+  }
+
   .container-produtos {
     justify-content: center;
   }
+  .opcoes-cardapio{
+    border-bottom:none ;  }
+
   .opecoes-servico {
     gap: 30px;
   }
+
   .servico-card {
     height: auto;
   }
+
   .servico-card p {
     display: none;
   }
-  
+  .social menu{
+    flex-direction: row;
+  }
+  .contatos-item{
+  align-items: center;
+  }
+  .contatos-container{
+    flex-direction: row;
+  }
+  footer p{
+    text-align: center;
+  }
+
 }
